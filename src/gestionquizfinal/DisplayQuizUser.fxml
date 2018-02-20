@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="650.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gestionquizfinal.DisplayQuizUserController">
+   <children>
+      <Label layoutX="32.0" layoutY="26.0" prefHeight="49.0" prefWidth="223.0" text="Quiz:">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <Button fx:id="btSubmit" layoutX="583.0" layoutY="571.0" mnemonicParsing="false" onAction="#Submit" prefHeight="59.0" prefWidth="306.0" text="Submit">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Button>
+      <Button fx:id="btRetour" layoutX="246.0" layoutY="571.0" mnemonicParsing="false" onAction="#Retour" prefHeight="59.0" prefWidth="306.0" text="Retour">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Button>
+      <ScrollPane layoutX="32.0" layoutY="88.0" prefHeight="455.0" prefWidth="940.0">
+         <content>
+            <AnchorPane prefHeight="633.0" prefWidth="938.0">
+               <children>
+                  <RadioButton fx:id="rbSport2" layoutX="376.0" layoutY="94.0" mnemonicParsing="false" text="Non" />
+                  <RadioButton fx:id="rbSport1" layoutX="376.0" layoutY="72.0" mnemonicParsing="false" text="Oui" />
+                  <Label layoutX="22.0" layoutY="20.0" prefHeight="11.0" prefWidth="90.0" text="Sport :">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lbSport2" layoutX="15.0" layoutY="126.0" prefHeight="57.0" prefWidth="361.0" />
+                  <RadioButton fx:id="rbSport4" layoutX="377.0" layoutY="156.0" mnemonicParsing="false" text="Non" />
+                  <RadioButton fx:id="rbSport3" layoutX="377.0" layoutY="134.0" mnemonicParsing="false" text="Oui" />
+                  <RadioButton fx:id="rbCulture2" layoutX="830.0" layoutY="104.0" mnemonicParsing="false" text="Non" />
+                  <RadioButton fx:id="rbCulture1" layoutX="830.0" layoutY="82.0" mnemonicParsing="false" text="Oui" />
+                  <Label fx:id="lbCulture1" layoutX="470.0" layoutY="73.0" prefHeight="57.0" prefWidth="361.0" />
+                  <Label layoutX="476.0" layoutY="30.0" prefHeight="11.0" prefWidth="90.0" text="Culture :">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lbCulture2" layoutX="471.0" layoutY="127.0" prefHeight="57.0" prefWidth="361.0" />
+                  <RadioButton fx:id="rbCulture4" layoutX="831.0" layoutY="166.0" mnemonicParsing="false" text="Non" />
+                  <RadioButton fx:id="rbCulture3" layoutX="831.0" layoutY="144.0" mnemonicParsing="false" text="Oui" />
+                  <RadioButton fx:id="rbFilm2" layoutX="377.0" layoutY="270.0" mnemonicParsing="false" text="Non" />
+                  <RadioButton fx:id="rbFilm1" layoutX="377.0" layoutY="248.0" mnemonicParsing="false" text="Oui" />
+                  <Label fx:id="lbFilm1" layoutX="17.0" layoutY="239.0" prefHeight="57.0" prefWidth="361.0" />
+                  <Label layoutX="23.0" layoutY="196.0" prefHeight="11.0" prefWidth="90.0" text="Film:">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lbFilm2" layoutX="16.0" layoutY="302.0" prefHeight="57.0" prefWidth="361.0" />
+                  <RadioButton fx:id="rbFilm4" layoutX="378.0" layoutY="332.0" mnemonicParsing="false" text="Non" />
+                  <RadioButton fx:id="rbFilm3" layoutX="378.0" layoutY="310.0" mnemonicParsing="false" text="Oui" />
+                  <RadioButton fx:id="rbSerie2" layoutX="831.0" layoutY="267.0" mnemonicParsing="false" text="Non" />
+                  <RadioButton fx:id="rbSerie1" layoutX="831.0" layoutY="245.0" mnemonicParsing="false" text="Oui" />
+                  <Label fx:id="lbSerie1" layoutX="471.0" layoutY="236.0" prefHeight="57.0" prefWidth="361.0" />
+                  <Label layoutX="477.0" layoutY="193.0" prefHeight="11.0" prefWidth="90.0" text="Serie:">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lbSerie2" layoutX="470.0" layoutY="299.0" prefHeight="57.0" prefWidth="361.0" />
+                  <RadioButton fx:id="rbSerie4" layoutX="832.0" layoutY="329.0" mnemonicParsing="false" text="Non" />
+                  <RadioButton fx:id="rbSerie3" layoutX="832.0" layoutY="307.0" mnemonicParsing="false" text="Oui" />
+                  <RadioButton fx:id="rbTravel2" layoutX="375.0" layoutY="433.0" mnemonicParsing="false" text="Non" />
+                  <RadioButton fx:id="rbTravel1" layoutX="375.0" layoutY="411.0" mnemonicParsing="false" text="Oui" />
+                  <Label fx:id="lbTravel1" layoutX="15.0" layoutY="402.0" prefHeight="57.0" prefWidth="361.0" />
+                  <Label layoutX="21.0" layoutY="359.0" prefHeight="11.0" prefWidth="90.0" text="Travel :">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lbTravel2" layoutX="14.0" layoutY="465.0" prefHeight="57.0" prefWidth="361.0" />
+                  <RadioButton fx:id="rbTravel4" layoutX="376.0" layoutY="495.0" mnemonicParsing="false" text="Non" />
+                  <RadioButton fx:id="rbTravel3" layoutX="376.0" layoutY="473.0" mnemonicParsing="false" text="Oui" />
+                  <RadioButton fx:id="rbHobie2" layoutX="829.0" layoutY="430.0" mnemonicParsing="false" text="Non" />
+                  <RadioButton fx:id="rbHobie1" layoutX="829.0" layoutY="408.0" mnemonicParsing="false" text="Oui" />
+                  <Label fx:id="lbHobies1" layoutX="469.0" layoutY="399.0" prefHeight="57.0" prefWidth="361.0" />
+                  <Label layoutX="475.0" layoutY="356.0" prefHeight="11.0" prefWidth="90.0" text="Hobies :">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lbHobies2" layoutX="468.0" layoutY="462.0" prefHeight="57.0" prefWidth="361.0" />
+                  <RadioButton fx:id="rbHobie4" layoutX="830.0" layoutY="492.0" mnemonicParsing="false" text="Non" />
+                  <RadioButton fx:id="rbHobie3" layoutX="830.0" layoutY="470.0" mnemonicParsing="false" text="Oui" />
+                  <Label fx:id="lbSport1" layoutX="16.0" layoutY="63.0" prefHeight="57.0" prefWidth="361.0" />
+               </children>
+            </AnchorPane>
+         </content>
+      </ScrollPane>
+   </children>
+</AnchorPane>

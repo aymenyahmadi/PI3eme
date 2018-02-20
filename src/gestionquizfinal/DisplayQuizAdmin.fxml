@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="650.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gestionquizfinal.DisplayQuizAdminController">
+   <children>
+      <TableView fx:id="tableViewQuiz" layoutX="46.0" layoutY="101.0" prefHeight="462.0" prefWidth="914.0">
+        <columns>
+          <TableColumn fx:id="colQuestion" prefWidth="641.0000038146973" text="Question" />
+          <TableColumn fx:id="colTheme" minWidth="0.0" prefWidth="309.0" text="Theme" />
+        </columns>
+      </TableView>
+      <Button fx:id="btAddQuiz" layoutX="64.0" layoutY="578.0" mnemonicParsing="false" onAction="#actionAddQuiz" prefHeight="42.0" prefWidth="239.0" text="Add Question">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Button>
+      <Button fx:id="btEditQuiz" layoutX="357.0" layoutY="578.0" mnemonicParsing="false" onAction="#actionEditQuiz" prefHeight="42.0" prefWidth="239.0" text="Edit Question">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Button>
+      <Button fx:id="btDeleteQuiz" layoutX="640.0" layoutY="578.0" mnemonicParsing="false" onAction="#actionDeleteQuiz" prefHeight="42.0" prefWidth="239.0" text="Delete Question">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Button>
+      <Label layoutX="401.0" layoutY="14.0" prefHeight="65.0" prefWidth="239.0" text="Admin panel:">
+         <font>
+            <Font size="34.0" />
+         </font>
+      </Label>
+      <Button fx:id="btStats" layoutX="46.0" layoutY="54.0" mnemonicParsing="false" onAction="#showStats" prefHeight="28.0" prefWidth="134.0" text="Show stats" />
+   </children>
+</AnchorPane>
